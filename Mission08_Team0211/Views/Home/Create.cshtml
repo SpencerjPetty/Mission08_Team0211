@@ -1,0 +1,49 @@
+@model Mission08_Team0211.Models.Task
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <form method="post" class="w-100" style="max-width: 500px;">
+            <h1 class="text-center">Your Task</h1>
+            <hr/>
+
+            <div asp-validation-summary="All"></div>
+
+            <input type="hidden" asp-for="TaskId"/>
+
+            <div class="mb-3">
+                <label for="TaskName" class="form-label">Name</label>
+                <input class="form-control" id="TaskName" asp-for="TaskName" type="text"/>
+            </div>
+
+            <div class="mb-3">
+                <label for="DueDate" class="form-label">Due Date</label>
+                <input type="date" class="form-control" id="DueDate" asp-for="DueDate"/>
+            </div>
+
+            <div class="mb-3">
+                <label for="Quadrant" class="form-label">Quadrant</label>
+                <select class="form-select" id="Quadrant" asp-for="Quadrant">
+                    <option value="1">Urgent & Important</option>
+                    <option value="2">Urgent & Not Important</option>
+                    <option value="3">Not Urgent & Important</option>
+                    <option value="4">Not Urgent & Not Important</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="CategoryId" class="form-label">Movie Category</label>
+                <select class="form-select" id="CategoryId" asp-for="CategoryId" type="text">
+                    <option value="">Select a Category</option>
+                    @foreach (Category c in ViewBag.Categories)
+                    {
+                        <option value="@c.CategoryId">@c.Name</option>
+                    }
+                </select>
+            </div>
+            
+            <hr/>
+            <button class="button button-primary mb-5 w-100" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
