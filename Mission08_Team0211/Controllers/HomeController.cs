@@ -40,7 +40,7 @@ public class HomeController : Controller
     public IActionResult Create()
     {
         ViewBag.Categories = _repo.Categories;
-        return View();
+        return View(new Task());
     }
 
     // POST: Save new task
