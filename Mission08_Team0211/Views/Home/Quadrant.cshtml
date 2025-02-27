@@ -1,0 +1,35 @@
+@model IEnumerable<Mission08_Team0211.Models.Task>
+
+@{
+    ViewData["Title"] = "Task Quadrants";
+}
+
+<h2>Task Quadrants</h2>
+<div class="container">
+    <div class="row">
+        <!-- Quadrant I -->
+        <div class="col-md-6">
+            <h4>Quadrant I: Important / Urgent</h4>
+            @Html.Partial("EditTask", Model.Where(t => t.Quadrant == 1))
+        </div>
+
+        <!-- Quadrant II -->
+        <div class="col-md-6">
+            <h4>Quadrant II: Important / Not Urgent</h4>
+            @Html.Partial("EditTask", Model.Where(t => t.Quadrant == 2))
+        </div>
+    </div>
+    <div class="row">
+        <!-- Quadrant III -->
+        <div class="col-md-6">
+            <h4>Quadrant III: Not Important / Urgent</h4>
+            @Html.Partial("EditTask", Model.Where(t => t.Quadrant == 3))
+        </div>
+
+        <!-- Quadrant IV -->
+        <div class="col-md-6">
+            <h4>Quadrant IV: Not Important / Not Urgent</h4>
+            @Html.Partial("EditTask", Model.Where(t => t.Quadrant == 4))
+        </div>
+    </div>
+</div>

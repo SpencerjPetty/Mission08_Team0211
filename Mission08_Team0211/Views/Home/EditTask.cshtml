@@ -1,0 +1,29 @@
+@model IEnumerable<Mission08_Team0211.Models.Task>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Task</th>
+        <th>Due Date</th>
+        <th>Category</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var task in Model)
+    {
+        <tr>
+            <td>@task.TaskName</td>
+            <td>@task.DueDate?.ToString("yyyy-MM-dd")</td>
+            <td>@task.Category.Name</td>
+            <td>
+                <a asp-controller="Tasks" asp-action="Edit" asp-route-id="@task.TaskId" class="btn btn-warning btn-sm">Edit</a>
+                <a asp-controller="Tasks" asp-action="Delete" asp-route-id="@task.TaskId" class="btn btn-danger btn-sm">Delete</a>
+                <form asp-controller="Tasks" asp-action="Complete" asp-route-id="@task.TaskId" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-success btn-sm">Mark as Completed</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
