@@ -1,16 +1,17 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Mission08_Team0211.Models;
+using Task = Mission08_Team0211.Models.Task;
 
 namespace Mission08_Team0211.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private TaskDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(TaskDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -27,6 +28,12 @@ namespace Mission08_Team0211.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult addTask()
+        { 
+            ViewBag.Categories = _context.Categories.OrderBy(x => x.Name).ToList();
+            return View(new Task());
         }
     }
 }
