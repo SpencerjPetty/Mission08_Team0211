@@ -4,12 +4,22 @@
     <projectFile profileName="http">Mission08_Team0211/Mission08_Team0211.csproj</projectFile>
     <projectFile profileName="https">Mission08_Team0211/Mission08_Team0211.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="17ce3d11-014d-418d-b911-2371a4eb3c41" name="Changes" comment="" />
+    <list default="true" id="17ce3d11-014d-418d-b911-2371a4eb3c41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission08_Team0211/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission08_Team0211/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission08_Team0211/quadrant_tasks.sqlite-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission08_Team0211/quadrant_tasks.sqlite-wal" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,23 +36,30 @@
     &quot;accountId&quot;: &quot;577fe965-c3ba-4438-957c-6c82f2807066&quot;
   }
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2taJeW3FDh1iQXaO2F39Kttjnfp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Mission08_Team0211: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Mission08_Team0211: http">
     <configuration name="Mission08_Team0211: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Mission08_Team0211/Mission08_Team0211.csproj" />
@@ -90,8 +107,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

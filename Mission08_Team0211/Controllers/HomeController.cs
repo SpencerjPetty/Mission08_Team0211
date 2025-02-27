@@ -29,7 +29,7 @@ public class HomeController : Controller
     }
 
     // List Tasks by Quadrant
-    public IActionResult Tasks()
+    public IActionResult Quadrant()
     {
         var tasks = _repo.Tasks.Where(t => !t.Completed).ToList();
         return View(tasks);
