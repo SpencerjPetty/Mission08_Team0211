@@ -8,8 +8,8 @@
             _context = context;
         }
 
-        public List<Task> Tasks => _context.Tasks.ToList();
-        public List<Category> Categories => _context.Categories.ToList();
+        public IQueryable<Task> Tasks => _context.Tasks;
+        public IQueryable<Category> Categories => _context.Categories;
         public void AddTask(Task task) {
             _context.Tasks.Add(task);
             _context.SaveChanges();

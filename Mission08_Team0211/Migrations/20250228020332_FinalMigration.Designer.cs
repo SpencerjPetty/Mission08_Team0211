@@ -11,8 +11,8 @@ using Mission08_Team0211.Models;
 namespace Mission08_Team0211.Migrations
 {
     [DbContext(typeof(TaskDbContext))]
-    [Migration("20250226024731_CoolMigration")]
-    partial class CoolMigration
+    [Migration("20250228020332_FinalMigration")]
+    partial class FinalMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace Mission08_Team0211.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Completed")
@@ -90,9 +90,7 @@ namespace Mission08_Team0211.Migrations
                 {
                     b.HasOne("Mission08_Team0211.Models.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoryId");
 
                     b.Navigation("Category");
                 });

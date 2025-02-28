@@ -16,11 +16,10 @@ namespace Mission08_Team0211.Models
         [Required]
         public int Quadrant { get; set; }
 
-        [Required]
-        public int CategoryId { get; set; } // Foreign Key
+        public int? CategoryId { get; set; } // Foreign Key
 
         [ForeignKey("CategoryId")]
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
 
         public bool Completed { get; set; } = false;
     }

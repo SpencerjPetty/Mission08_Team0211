@@ -1,4 +1,49 @@
-﻿<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4">Welcome to the Priority Map</h1>
+        <p class="lead">
+            Organize your tasks effectively using Stephen Covey's **4 Quadrants** method.
+            Prioritize what truly matters and boost your productivity!
+        </p>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="text-center mt-4">
+        <h3>Take Control of Your Time</h3>
+        <p>Start managing your tasks efficiently by adding and viewing them below.</p>
+
+        <a asp-action="Create" class="btn btn-success btn-lg mx-2">
+            <i class="fas fa-plus"></i> Add a Task
+        </a>
+
+        <a asp-action="Quadrant" class="btn btn-primary btn-lg mx-2">
+            <i class="fas fa-tasks"></i> View Tasks
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>What Are the 4 Quadrants?</h2>
+            <p>
+                Stephen Covey's **Time Management Matrix** helps you focus on what is
+                important, not just what is urgent. Tasks are categorized into:
+            </p>
+            <ul>
+                <li><strong>Quadrant 1 (Urgent & Important)</strong> – Crises, deadlines, and problems.</li>
+                <li><strong>Quadrant 2 (Not Urgent & Important)</strong> – Planning, growth, and relationships.</li>
+                <li><strong>Quadrant 3 (Urgent & Not Important)</strong> – Interruptions, meetings, and distractions.</li>
+                <li><strong>Quadrant 4 (Not Urgent & Not Important)</strong> – Time-wasters, excessive entertainment.</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+			<img src="~/img/4quads.png"
+                 alt="Covey's 4 Quadrants"
+                 class="img-fluid">
+        </div>
+    </div>
 </div>

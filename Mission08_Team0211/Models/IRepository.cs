@@ -2,8 +2,8 @@
 {
     public interface IRepository
     {
-        List<Task> Tasks { get; }
-        List<Category> Categories { get; }
+        IQueryable<Task> Tasks { get; }
+        IQueryable<Category> Categories { get; }
         public void AddTask(Task task);
         public Task EditTask(Task task);
         public void DeleteTask(Task task);

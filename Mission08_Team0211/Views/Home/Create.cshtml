@@ -23,16 +23,16 @@
             <div class="mb-3">
                 <label for="Quadrant" class="form-label">Quadrant</label>
                 <select class="form-select" id="Quadrant" asp-for="Quadrant">
-                    <option value="1">Urgent & Important</option>
-                    <option value="2">Urgent & Not Important</option>
-                    <option value="3">Not Urgent & Important</option>
-                    <option value="4">Not Urgent & Not Important</option>
+                    <option value="1">I: Urgent & Important</option>
+                    <option value="2">II: Not Urgent, but Important</option>
+                    <option value="3">III: Urgent, but not Important</option>
+                    <option value="4">IV: Not Urgent nor Important</option>
                 </select>
             </div>
 
             <div class="mb-3">
-                <label for="CategoryId" class="form-label">Movie Category</label>
-                <select class="form-select" id="CategoryId" asp-for="CategoryId" type="text">
+                <label for="CategoryId" class="form-label">Task Category</label>
+                <select class="form-select" id="CategoryId" asp-for="CategoryId">
                     <option value="">Select a Category</option>
                     @foreach (Category c in ViewBag.Categories)
                     {
